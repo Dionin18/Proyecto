@@ -98,7 +98,8 @@
     <br><br>
 
     <!-- REJILLA PAGINA -->
-        <div class="container">
+    <div class="container">
+        <div class="row">
             <div class="col-md-4">
                 <div class="row">
                     <div class="col-md-12">
@@ -147,19 +148,64 @@
                             </div>
                         </div>
                     </div>
-
-
-                </div>
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-12">
-
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2>Preparan nueva versión de "The Office" con una jefa como protagonista</h2>
+                            </div>
+                            <div class="panel-body">
+                                <h3>La clásica comedia "The Office" tendrá una nueva versión liderada y protagonizada por una mujer.</h3>
+                                <p>Hace 7 meses</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2>«The Office»: Jhon Krasinski se reunirá con Steve Carell en nueva comedia</h2>
+                            </div>
+                            <div class="panel-body">
+                                <h3>La dupla de la serie de comedia participará en nueva película llamada "IF", junto a Ryan Reynolds y Phoebe Waller-Bridge, a estrenar en 2023</h3>
+                                <p>Hace un año</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2>«The Office» fue la serie más vista en los servicios de streaming en 2020</h2>
+                            </div>
+                            <div class="panel-body">
+                                <h3>Con más de 57 mil millones de minutos reproducidos, la popular comedia superó con creces los minutos reproducidos de los hits más recientes.</h3>
+                                <p>Hace 2 años</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2>The Office: Dwight renuncia a la Matrix en el final censurado</h2>
+                            </div>
+                            <div class="panel-body">
+                                <h3>Este final nunca antes visto de The Office, que involucra a la película Matrix y a Dwight, es lo mejor que podrás ver para recordar la serie.</h3>
+                                <p>Hace 2 años</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
 
         <!--JS-->
         <script src="js/jquery.min.js"></script>

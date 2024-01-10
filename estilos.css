@@ -1,5 +1,5 @@
 body{
-    background-image: url("../fondo/imagenn.png");
+    background-image: url("fondo/imagenn.png");
 }
 
 .jumbotron{
@@ -48,3 +48,6 @@ body{
     text-align: center; 
   }
   
+fondoblanco{
+    background-color: white;
+}
