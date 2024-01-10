@@ -97,7 +97,7 @@
 
     <br><br>
 
-    <!-- ENCASILLAMIENTO PAGINA -->
+    <!-- REJILLA PAGINA -->
         <div class="container">
             <div class="col-md-4">
                 <div class="row">
@@ -149,6 +149,13 @@
                     </div>
 
 
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                        </div>
+                    </div>
                 </div>
 
             </div>
