@@ -1,0 +1,50 @@
+body{
+    background-image: url("../fondo/imagenn.png");
+}
+
+.jumbotron{
+    background-color: #FDE5EC;
+    color: purple;
+}
+
+.panel-heading{
+    background-color: #FFCCCC !important;
+    color: #E48586 !important;
+}
+
+.panel-body{
+    color: #3E001F !important;
+}
+
+.navbar {
+    background-color: #FFD0D0;
+}
+
+.navbar-brand:link, .navbar-brand:visited {
+    color: #A78295 !important;
+}
+
+.navbar-brand:hover, .navbar-brand:active {
+    color: #8CC0DE !important;
+}
+
+#navbar li a:link, #navbar li a:visited{
+    color: #A78295 !important;
+}
+
+#navbar li a:hover, #navbar li a:active{
+    color: #8CC0DE !important;
+}
+
+.slide {
+    margin-top: 10px;
+}
+
+.slide img {
+    height: 70vh;
+}
+  
+.container-video {
+    text-align: center; 
+  }
+  
