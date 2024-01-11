@@ -1,5 +1,6 @@
 <?php
 //datos de conexion a la base de datos
+session_start();
 
 $db_host = "localhost";
 $db_name = "proyecto";
@@ -20,6 +21,14 @@ if(!$conexion){
 $correo = $_POST["correo"];
 $contraseña = $_POST["contraseña"];
 
+
+$sql = "SELECT * FROM usuario WHERE correo='$correo';";
+$resultado = $conexion->query($sql);
+
+while($col = $resultado->fetch_array()) {
+    $aux = $col;
+}
+$_SESSION["email"] = $aux[4];
 
 $sql = "SELECT * FROM usuario WHERE correo='$correo';";
 $resultado = $conexion->query($sql);
@@ -55,10 +64,11 @@ $resultado = $conexion->query($sql);
             if($resultado->fetch_array() > 1){
                 $sql = "SELECT * FROM usuario WHERE contraseña='$contraseña';";
                 $resultado = $conexion->query($sql);
-            
+                
                 if($resultado->fetch_array() > 1){
                     echo "Se inicio sesion correctamente.<br>";
-                    echo "<a href='index.php'><button type='button' class='btn btn-dark'>Volver a la pagina principal</button></a>";
+                    echo "<a href='index_copy.php'><button type='button' class='btn btn-dark'>Volver a la pagina principal</button></a>";
+                    $_SESSION["pass"] = $aux[5];
                 }else{
                     echo "Contraseña incorrecta. Intentelo de nuevo.";
                 }
