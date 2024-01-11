@@ -1,5 +1,5 @@
 body{
-    background-image: url("fondo/imagenn.png");
+    background-image: url("fondo/imagen4.jpg");
 }
 
 .jumbotron{
@@ -8,8 +8,8 @@ body{
 }
 
 .panel-heading{
-    background-color: #FFCCCC !important;
-    color: #E48586 !important;
+    background-color: #D9C5B4 !important;
+    color: #8C6F56 !important;
 }
 
 .panel-body{
@@ -21,11 +21,11 @@ body{
 }
 
 .navbar-brand:link, .navbar-brand:visited {
-    color: #A78295 !important;
+    color: #8FA6A6 !important;
 }
 
 .navbar-brand:hover, .navbar-brand:active {
-    color: #8CC0DE !important;
+    color: #6593A6 !important;
 }
 
 #navbar li a:link, #navbar li a:visited{
@@ -47,7 +47,10 @@ body{
 .container-video {
     text-align: center; 
   }
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
-fondoblanco{
-    background-color: white;
-}

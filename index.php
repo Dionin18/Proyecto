@@ -167,6 +167,7 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="panel panel-default" style="background-color:white;">
@@ -184,6 +185,7 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="panel panel-default" style="background-color:white;">
@@ -197,10 +199,10 @@
                                     Leer Noticia
                                 </button>
                             </div>
-                            <br>
                         </div>
                     </div>
                 </div>
+                <br>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="panel panel-default" style="background-color:white;">
@@ -244,6 +246,7 @@
                             <br>
                         </div>
                     </div>
+                    <br>
                 </div>
             </div>
         </div>
