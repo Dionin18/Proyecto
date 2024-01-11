@@ -17,9 +17,9 @@
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </head>
 <body>
-
     <!-- BARRA NAVEGACION -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin: 0 auto;">
         <div class="container">
@@ -44,10 +44,14 @@
                 </ul>
                 <ul class="nav navbar-nav ms-auto"> <li class="nav-item">
                     <li>
-                        <a class="nav-link navbar-brand" href="#">Iniciar sesión</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navbar-brand" href="#">Registro</a>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cerrar sesión
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.php">Aceptar</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -159,11 +163,7 @@
                             <div class="panel-body">
                                 <h3>La clásica comedia "The Office" tendrá una nueva versión liderada y protagonizada por una mujer.</h3>
                                 <p>Hace 7 meses</p>
-                                <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
-                                    Leer Noticia
-                                </button>
                             </div>
-                            <br>
                         </div>
                     </div>
                 </div>
@@ -176,11 +176,7 @@
                             <div class="panel-body">
                                 <h3>La dupla de la serie de comedia participará en nueva película llamada "IF", junto a Ryan Reynolds y Phoebe Waller-Bridge, a estrenar en 2023</h3>
                                 <p>Hace un año</p>
-                                <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
-                                    Leer Noticia
-                                </button>
                             </div>
-                            <br>
                         </div>
                     </div>
                 </div>
@@ -193,11 +189,7 @@
                             <div class="panel-body">
                                 <h3>Con más de 57 mil millones de minutos reproducidos, la popular comedia superó con creces los minutos reproducidos de los hits más recientes.</h3>
                                 <p>Hace 2 años</p>
-                                <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
-                                    Leer Noticia
-                                </button>
                             </div>
-                            <br>
                         </div>
                     </div>
                 </div>
@@ -210,38 +202,7 @@
                             <div class="panel-body">
                                 <h3>Este final nunca antes visto de The Office, que involucra a la película Matrix y a Dwight, es lo mejor que podrás ver para recordar la serie.</h3>
                                 <p>Hace 2 años</p>
-                                <div id="myModal" class="modal fade" role="dialog">  
-<!-- Button to Open the Modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-  Open modal
-</button>
-
-<!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        Modal body..
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
                             </div>
-                            <br>
                         </div>
                     </div>
                 </div>
