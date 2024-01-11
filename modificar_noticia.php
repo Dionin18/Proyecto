@@ -5,6 +5,21 @@ function eliminar($conexion, $enlace){
 
     $resultado = $conexion->query($sql);
     if ($resultado)
+        echo "<br>La noticia se elimino correctamente.<br>";
+        echo "<a href='index.php'> <button type='button' class='btn btn-outline-secondary btn-lg'>Volver al inicio</button> </a>";
+        
+        die();
+    else{
+        echo "Hubo un problema al eliminar la noticia";
+        die();
+    }
+}
+
+function eliminar2($conexion, $enlace){
+    $sql = "DELETE FROM noticia WHERE enlace = '$enlace'; ";
+
+    $resultado = $conexion->query($sql);
+    if ($resultado)
         return True;
     else{
         return False;
@@ -30,8 +45,14 @@ if(!$conexion){
 $link = $_POST["link"];
 $accion = $_POST["accion"];
 
+
+$sql = "SELECT * FROM usuario WHERE enlace='$link';";
+$resultado = $conexion->query($sql);
+
 if($accion == "0"){
     eliminar($conexion, $link);
+}else{
+    eliminar2($conexion, $link);
 }
 
 ?>
