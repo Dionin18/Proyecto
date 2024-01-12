@@ -33,21 +33,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link navbar-brand" href="#">Comentarios</a>
+                        <a class="nav-link navbar-brand" href="login.php">Comentarios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-brand" href="#">API</a>
+                        <a class="nav-link navbar-brand" href="login.php">API</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-brand" href="#">Autores</a>
+                        <a class="nav-link navbar-brand" href="login.php">Autores</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav ms-auto"> <li class="nav-item">
                     <li>
-                        <a class="nav-link navbar-brand" href="#">Iniciar sesión</a>
+                        <a class="nav-link navbar-brand" href="login.php">Iniciar sesión</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-brand" href="#">Registro</a>
+                        <a class="nav-link navbar-brand" href="signup.php">Registro</a>
                     </li>
                 </ul>
             </div>
