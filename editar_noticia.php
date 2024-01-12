@@ -1,3 +1,10 @@
+<?php
+error_reporting(E_ERROR);
+session_start();
+$correo = $_SESSION["email"];
+$contraseña = $_SESSION["pass"];
+$admin = $_SESSION["admin"];
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

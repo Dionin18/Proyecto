@@ -9,7 +9,7 @@ function guardar($conexion, $nombre, $apellido, $rut, $telefono, $correo, $contr
     
     if($resultado){
         echo "<br>La cuenta se creo correctamente.<br>";
-        echo "<a href='login.php'> <button type='button'>Iniciar sesion</button> </a>"
+        echo "<a href='login.php'> <button type='button'>Iniciar sesion</button> </a>";
         return True;
     }else{
         echo "<br>Error al crear la cuenta.<br>";

@@ -184,7 +184,7 @@ if(!$conexion){
                                 echo '<h2>'. $col[0] . '</h2>';
                             echo '</div>';
                             echo '<div class="panel-body">';
-                                echo '<h3>' . $col[1] . '</h3>';
+                                echo '<h4>' . $col[1] . '</h4>';
                                 echo '<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal'.$aux.'">';
                                     echo 'Leer más...';
                                 echo '</button>';

@@ -40,6 +40,7 @@ $resultado = $conexion->query($sql);
                 
                 if($resultado->fetch_array() > 1){
                     $_SESSION["pass"] = $aux[5];
+                    $_SESSION["admin"] = $aux[7];
                 }else{
                     echo "Contraseña incorrecta. Intentelo de nuevo.";
                     die(require_once("login.php"));

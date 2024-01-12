@@ -1,11 +1,10 @@
 <?php
+error_reporting(E_ERROR);
 session_start();
 $correo = $_SESSION["email"];
 $contraseña = $_SESSION["pass"];
+$admin = $_SESSION["admin"];
 
-if(($correo and $contraseña) != NULL){
-    echo "<h1>sesion iniciada</h1>";
-}
 
 ?>
 <!DOCTYPE html>

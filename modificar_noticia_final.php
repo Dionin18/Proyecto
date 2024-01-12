@@ -1,4 +1,9 @@
 <?php
+error_reporting(E_ERROR);
+session_start();
+$correo = $_SESSION["email"];
+$contraseña = $_SESSION["pass"];
+$admin = $_SESSION["admin"];
 
 function guardar($conexion, $titulo, $subtitulo, $enlace){
     $sql = "INSERT INTO noticia (titulo, subtitulo, enlace) VALUES ('$titulo', '$subtitulo', '$enlace')";
