@@ -15,7 +15,7 @@ function guardar($conexion, $nombre, $apellido, $rut, $telefono, $correo, $contr
         echo "<br>Error al crear la cuenta.<br>";
         return False;
     }
-}
+} 
 
 function valida_rut($rut)
 {
