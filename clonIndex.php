@@ -71,7 +71,7 @@ if(!$conexion){
                 <ul class="nav navbar-nav ms-auto"> <li class="nav-item">
                     <li>
                         <div class="dropdown">
-                            <a class="btn btn-secondary dropdown-toggle" href="index.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Cerrar sesión
                             </a>
                             <ul class="dropdown-menu">

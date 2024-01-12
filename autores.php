@@ -29,7 +29,7 @@ $contraseña = $_SESSION["pass"];
     <!-- BARRA NAVEGACION -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin: 0 auto;">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="clonIndex.php">
                 <img src="logo/imagen2.jpg" alt="" width="40" height="40" class="d-inline-block align-text-top">
             </a>
             <a class="navbar-brand" href="clonindex.php">The Office</a>
@@ -51,7 +51,7 @@ $contraseña = $_SESSION["pass"];
                 <ul class="nav navbar-nav ms-auto"> <li class="nav-item">
                     <li>
                         <div class="dropdown">
-                            <a class="btn btn-secondary dropdown-toggle" href="index.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Cerrar sesión
                             </a>
                             <ul class="dropdown-menu">
