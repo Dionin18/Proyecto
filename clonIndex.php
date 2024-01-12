@@ -1,3 +1,28 @@
+<?php
+session_start();
+$correo = $_SESSION["email"];
+$contraseña = $_SESSION["pass"];
+
+require_once "phpqrcode/qrlib.php";
+
+//datos de conexion a la base de datos
+
+$db_host = "localhost";
+$db_name = "proyecto";
+$db_user = "root";
+$db_pass = "";
+
+//crear conexion de manera procedural
+
+$conexion = mysqli_connect($db_host,$db_user,$db_pass,$db_name);
+
+//verificar conexion
+
+if(!$conexion){
+    die("Conexion fallida: " . mysqli_connect_error());
+}
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -33,19 +58,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link navbar-brand" href="#">Comentarios</a>
+                        <a class="nav-link navbar-brand" href="comentarios.php">Comentarios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-brand" href="#">API</a>
+                        <a class="nav-link navbar-brand" href="api_id.php">API</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-brand" href="#">Autores</a>
+                        <a class="nav-link navbar-brand" href="autores.php">Autores</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav ms-auto"> <li class="nav-item">
                     <li>
                         <div class="dropdown">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="btn btn-secondary dropdown-toggle" href="index.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Cerrar sesión
                             </a>
                             <ul class="dropdown-menu">
@@ -112,10 +137,10 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                                     <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
                                 </svg>
-                                Scranton what? The Electry City!
+                                Simulacro de Incendio | The Office Latinoamérica
                             </div>
                             <div class="container-video">
-                                <iframe src="https://assets.pinterest.com/ext/embed.html?id=1196337392696965" height="295" width="345" frameborder="0" scrolling="no"></iframe>
+                            <iframe width="100%" height="250px" src="https://www.youtube.com/embed/Bx6e_1a18ow?si=phpRHTy0gWgO0LyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>    
                         </div>
                         </div>
@@ -128,10 +153,10 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                                         <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
                                     </svg>
-                                    Male Prima Donna 
+                                    The Office, La Mejor Comedia Del Siglo | #TeLoResumo
                                 </div>
                                 <div class="container-video">
-                                    <iframe src="https://assets.pinterest.com/ext/embed.html?id=1900024836978086" height="282" width="345" frameborder="0" scrolling="no" ></iframe>
+                                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/2zgV7f4s03U?si=8yciilBn1ABiu86B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                 </div>    
                             </div>
                         </div>
@@ -144,114 +169,65 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                                         <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
                                     </svg>
-                                    The Best Intro 
+                                    Jim Imita a Dwight | The Office Latinoamérica
                                 </div>
                                 <div class="container-video">
-                                <iframe src="https://assets.pinterest.com/ext/embed.html?id=422281209111754" height="413" width="345" frameborder="0" scrolling="no" ></iframe>
+                                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/uBwDRQiewJQ?si=r8KSFO30jMQQdtpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                 </div>    
                             </div>
                         </div>
                     </div>
             </div>
             <div class="col-md-8">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="panel panel-default" style="background-color:white;">
-                            <div class="panel-heading">
-                                <h2>Preparan nueva versión de "The Office" con una jefa como protagonista</h2>
-                            </div>
-                            <div class="panel-body">
-                                <h3>La clásica comedia "The Office" tendrá una nueva versión liderada y protagonizada por una mujer.</h3>
-                                <p>Hace 7 meses</p>
-                                <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
-                                    Leer Noticia
-                                </button>
-                            </div>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="panel panel-default" style="background-color:white;">
-                            <div class="panel-heading">
-                                <h2>«The Office»: Jhon Krasinski se reunirá con Steve Carell en nueva comedia</h2>
-                            </div>
-                            <div class="panel-body">
-                                <h3>La dupla de la serie de comedia participará en nueva película llamada "IF", junto a Ryan Reynolds y Phoebe Waller-Bridge, a estrenar en 2023</h3>
-                                <p>Hace un año</p>
-                                <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
-                                    Leer Noticia
-                                </button>
-                            </div>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="panel panel-default" style="background-color:white;">
-                            <div class="panel-heading">
-                                <h2>«The Office» fue la serie más vista en los servicios de streaming en 2020</h2>
-                            </div>
-                            <div class="panel-body">
-                                <h3>Con más de 57 mil millones de minutos reproducidos, la popular comedia superó con creces los minutos reproducidos de los hits más recientes.</h3>
-                                <p>Hace 2 años</p>
-                                <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
-                                    Leer Noticia
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="panel panel-default" style="background-color:white;">
-                            <div class="panel-heading">
-                                <h2>The Office: Dwight renuncia a la Matrix en el final censurado</h2>
-                            </div>
-                            <div class="panel-body">
-                                <h3>Este final nunca antes visto de The Office, que involucra a la película Matrix y a Dwight, es lo mejor que podrás ver para recordar la serie.</h3>
-                                <p>Hace 2 años</p>
-                                <div id="myModal" class="modal fade" role="dialog">  
-<!-- Button to Open the Modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-  Open modal
-</button>
+            <?php
+            $aux = "a";
+            $sql = "SELECT * FROM noticia";
+            $resultado = $conexion->query($sql);
+            while($col = $resultado->fetch_array()) {
+                echo '<div class="row">';
+                    echo '<div class="col-md-12">';
+                        echo '<div class="panel panel-default" style="background-color:white;">';
+                            echo '<div class="panel-heading">';
+                                echo '<h2>'. $col[0] . '</h2>';
+                            echo '</div>';
+                            echo '<div class="panel-body">';
+                                echo '<h3>' . $col[1] . '</h3>';
+                                echo '<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal'.$aux.'">';
+                                    echo 'Leer más...';
+                                echo '</button>';
 
-<!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
+                                echo '<div class="modal" id="myModal'.$aux.'">';
+                                    echo '<div class="modal-dialog">';
+                                        echo '<div class="modal-content">';
 
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
+                                            echo '<div class="modal-body" style="text-align:center;">';
+                                                $arg = $col[2];
+                                                $path = "qr/";
+                                                $qrcode = $path.time().$aux.".png";
+                                                QRcode::png($arg, $qrcode,'H',2,2);
+                                                echo '<img src="'.$qrcode.'">';
+                                                $arg = "";
+                                                $qrcode = "";
+                                            
+                                            echo '</div>';
+                                            echo '<div class="modal-footer">';
+                                                echo '<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>';
+                                            echo '</div>';
 
-      <!-- Modal body -->
-      <div class="modal-body">
-        Modal body..
-      </div>
+                                        echo '</div>';
+                                    echo '</div>';
+                                echo '</div>';
+                            echo '</div>';
+                            echo '<br>';
+                        echo '</div>';
+                    echo '</div>';
+                echo '</div>';
+                echo '<br>';            
+                $aux = $aux . "a";
+            }
 
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-                            </div>
-                            <br>
-                        </div>
-                    </div>
-                    <br>
-                </div>
+            mysqli_close($conexion);
+            ?>
             </div>
         </div>
     </div>
