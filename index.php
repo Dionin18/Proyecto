@@ -2,7 +2,7 @@
 
 require_once "phpqrcode/qrlib.php";
 
-//datos de conexion a la base de datos
+datos de conexion a la base de datos
 
 $db_host = "localhost";
 $db_name = "proyecto";
