@@ -1,3 +1,9 @@
+<?php
+error_reporting(E_ERROR);
+session_start();
+$correo = $_SESSION["email"];
+$contraseña = $_SESSION["pass"];
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -26,7 +32,7 @@
             <a class="navbar-brand" href="#">
                 <img src="logo/imagen2.jpg" alt="" width="40" height="40" class="d-inline-block align-text-top">
             </a>
-            <a class="navbar-brand" href="#">The Office</a>
+            <a class="navbar-brand" href="clonindex.php">The Office</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -36,18 +42,22 @@
                         <a class="nav-link navbar-brand" href="#">Comentarios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-brand" href="#">API</a>
+                        <a class="nav-link navbar-brand" href="api_id.php">API</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-brand" href="#">Autores</a>
+                        <a class="nav-link navbar-brand" href="autores.php">Autores</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav ms-auto"> <li class="nav-item">
                     <li>
-                        <a class="nav-link navbar-brand" href="#">Iniciar sesión</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navbar-brand" href="#">Registro</a>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="index.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cerrar sesión
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.php">Aceptar</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>

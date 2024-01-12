@@ -25,6 +25,7 @@
         <div class="container">
         <div class="row">
             <div class="col">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <h1 style="text-align: center;">REGISTRAR CUENTA</h1>
             <hr>
 
