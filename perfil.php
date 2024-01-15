@@ -92,10 +92,10 @@ while($col = $resultado->fetch_array()) {
                         <a class="nav-link navbar-brand" href="autores.php">Autores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-brand" href="#">Ejercicios</a>
+                        <a class="nav-link navbar-brand" href="Perfil.php">Ver Perfil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-brand" href="Perfil.php">Ver Perfil</a>
+                        <a class="nav-link navbar-brand" href="ejercicios.php">Ejercicios</a>
                     </li>
                     <?php
                         if($admin == 0){

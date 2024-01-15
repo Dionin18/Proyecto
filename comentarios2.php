@@ -53,6 +53,9 @@ $contraseña = $_SESSION["pass"];
                     <li class="nav-item">
                         <a class="nav-link navbar-brand" href="Perfil.php">Ver Perfil</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-brand" href="ejercicios.php">Ejercicios</a>
+                    </li>
                     <?php
                         if($admin == 0){
                             echo '<li class="nav-item">';
