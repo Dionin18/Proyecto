@@ -81,64 +81,106 @@ $contraseña = $_SESSION["pass"];
     <!-- TITULAR -->
     <div class="container">
         <div class="mt-4 p-5 bg-secondary text-white rounded">
-            <h1>Autores</h1>
-            <p>Esta página web ha sido creada por Emilia Gálvez y Benjamín Silva</p>
+            <h1>Comentarios</h1>
+            <p>Esta es la sección de comentarios</p>
         </div>
     </div>
     <!--CIERRE TITULAR-->
 
-    <br>
-
-    <!--FOTOS-->
-    <div class= "container">
-        <div class= "row">
-            <div class="col-md-2">
-                <div class="row">
-                    <div class="col-md-12">
-                    </div>
-                </div>
+    <!--COMENTARIOS-->
+    <div class="container"> 
+    <hr>
+        <div class="media">
+            <div class="media-left">
+            <img src="avatar/img_avatar3.png" class="media-object" style="width:60px">
             </div>
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col-md-12">
-                       <div class="card">
-                            <img src="autores/imagen1.jpg" style="align:center;" class="card-img-top" alt="Benjita" style="width: 60%; height:60%">
-                            <div class="card-body">
-                                <h5 class="card-title">Benjamín Silva</h5>
-                                <p class="card-text">Joven de 19 años</p>
-                                <p class="card-text">Está en su segundo año de universidad</p>
-                                <p class="card-text">Ingeniero civil Informático en formación</p>
-                                <p class="card-text">Jugador profesional de Fornite</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col-md-12">
-                       <div class="card">
-                            <img src="autores/imagen1.png" style="align:center;" class="card-img-top" alt="Benjita" style="width: 60%; height:60%">
-                            <div class="card-body">
-                                <h5 class="card-title">Emilia Gálvez</h5>
-                                <p class="card-text">20 años</p>
-                                <p class="card-text">Estudiante de Ingeniería civil Informática en la Universidad de Playa Ancha</p>
-                                <p class="card-text">Casada con Park Chanyeol</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="row">
-                    <div class="col-md-12">
-                    </div>
-                </div>
+            <div class="media-body">
+                <h4 class="media-heading">@ScrantonSpectator</h4>
+                <p>
+                    ¿Cuál es tu episodio favorito? El mío es definitivamente "Casino Night". La tensión entre Jim y Pam alcanza su punto máximo. ¡Qué final tan impactante!
+                </p>
             </div>
         </div>
-    </div>
+    <hr>
+        <div class="media">
+            <div class="media-left">
+                <img src="avatar/img_avatar6.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">@JanLevinson4Ever</h4>
+                <p>
+                    Amo odiar a Jan. Su relación con Michael es tan complicada, pero agrega un toque interesante a la serie. ¿A alguien más le fascina su personaje?
+                </p>
+            </div>
+        </div>
+    <hr>
+        <div class="media">
+            <div class="media-left">
+                <img src="avatar/img_avatar2.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">@ChiliLover93</h4>
+                <p>
+                    ¡La escena del chili de Kevin es una obra maestra! Pobre Kevin, pero no puedo evitar reírme cada vez que veo ese desastre en la oficina.
+                </p>
+            </div>
+        </div>
+    <hr>
+        <div class="media">
+            <div class="media-left">
+                <img src="avatar/img_avatar4.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">@MichaelScottWannabe</h4>
+                <p>
+                    Estoy pensando en organizar mi propia fiesta de "Scott's Tots". ¿Qué opinan? ¿Demasiado cruel o una idea brillante?
+                </p>
+            </div>
+        </div>
+    <hr>
+        <div class="media">
+            <div class="media-left">
+                <img src="avatar/img_avatar1.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">@AngelaKinseyFan</h4>
+                <p>
+                    Angela es tan perfecta en su papel de "The Office B**ch". ¡Amo su actitud! ¿Alguien más se ríe cada vez que muestra su desdén por Kevin?
+                </p>
+            </div>
+        </div>
+    <hr>
+        <div class="media">
+            <div class="media-left">
+                <img src="avatar/img_avatar5.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">@OfficeQuotesMaster</h4>
+                <p>
+                    "¡That's what she said!" tiene que ser la mejor línea recurrente de la historia de la televisión. ¿Cuál es tu cita favorita de la serie?
+                </p>
+            </div>
+        </div>
+    <hr>
 
-    <br><br><br>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="comentarios.php" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="comentarios.php">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav><br>
+
+    </div>
 
     <hr>
     <!-- FOOTERS -->
@@ -183,6 +225,8 @@ $contraseña = $_SESSION["pass"];
     </footer>
     <!-- CIERRE FOOTERS -->
 
+
+  
         <!--JS-->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>

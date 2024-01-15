@@ -48,7 +48,7 @@ $contraseña = $_SESSION["pass"];
                         <a class="nav-link navbar-brand" href="autores.php">Autores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navbar-brand" href="ejercicios.php">Ejercicios</a>
+                        <a class="nav-link navbar-brand" href="#">Ejercicios</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link navbar-brand" href="Perfil.php">Ver Perfil</a>
@@ -81,63 +81,18 @@ $contraseña = $_SESSION["pass"];
     <!-- TITULAR -->
     <div class="container">
         <div class="mt-4 p-5 bg-secondary text-white rounded">
-            <h1>Autores</h1>
-            <p>Esta página web ha sido creada por Emilia Gálvez y Benjamín Silva</p>
+            <h1>Ejercicios</h1>
+            <p>En esta sección está la resolución de los seis ejercicios presentados por el profesor Ezequiel.</p>
         </div>
     </div>
     <!--CIERRE TITULAR-->
 
     <br>
 
-    <!--FOTOS-->
-    <div class= "container">
-        <div class= "row">
-            <div class="col-md-2">
-                <div class="row">
-                    <div class="col-md-12">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col-md-12">
-                       <div class="card">
-                            <img src="autores/imagen1.jpg" style="align:center;" class="card-img-top" alt="Benjita" style="width: 60%; height:60%">
-                            <div class="card-body">
-                                <h5 class="card-title">Benjamín Silva</h5>
-                                <p class="card-text">Joven de 19 años</p>
-                                <p class="card-text">Está en su segundo año de universidad</p>
-                                <p class="card-text">Ingeniero civil Informático en formación</p>
-                                <p class="card-text">Jugador profesional de Fornite</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col-md-12">
-                       <div class="card">
-                            <img src="autores/imagen1.png" style="align:center;" class="card-img-top" alt="Benjita" style="width: 60%; height:60%">
-                            <div class="card-body">
-                                <h5 class="card-title">Emilia Gálvez</h5>
-                                <p class="card-text">20 años</p>
-                                <p class="card-text">Estudiante de Ingeniería civil Informática en la Universidad de Playa Ancha</p>
-                                <p class="card-text">Casada con Park Chanyeol</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="row">
-                    <div class="col-md-12">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- RESOLUCION EJERCICIOS -->
 
+
+    <!-- TERMINO RESOLUCION -->
     <br><br><br>
 
     <hr>
