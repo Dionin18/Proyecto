@@ -250,7 +250,7 @@ if(!$conexion){
             <br>
             <?php
             if($admin == 0){
-                echo '<a href="modificar_noticia.php">Modificar una Noticia</a>';
+                echo '<a href="editar_noticia.php">Modificar una Noticia</a>';
             }
             ?>
             </div>

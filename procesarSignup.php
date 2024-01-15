@@ -8,8 +8,7 @@ function guardar($conexion, $nombre, $apellido, $rut, $telefono, $correo, $contr
     $resultado = mysqli_query($conexion, $sql);
     
     if($resultado){
-        echo "<br>La cuenta se creo correctamente.<br>";
-        echo "<a href='login.php'> <button type='button'>Iniciar sesion</button> </a>";
+        include_once("index.php");
         return True;
     }else{
         echo "<br>Error al crear la cuenta.<br>";
@@ -77,7 +76,8 @@ $sql = "SELECT * FROM usuario WHERE rut='$rut';";
 $resultado = $conexion->query($sql);
 
 if($resultado->fetch_array() > 1){
-    die("El rut ingresado ya existe, intentelo de nuevo.");
+    echo "El rut ingresado ya existe, intentelo de nuevo.";
+    die();
 }
 
 
@@ -85,7 +85,8 @@ $sql = "SELECT * FROM usuario WHERE correo='$correo';";
 $resultado = $conexion->query($sql);
 
 if($resultado->fetch_array() > 1){
-    die("El correo ingresado ya existe, intentelo de nuevo.");
+    echo "El correo ingresado ya existe, intentelo de nuevo.";
+    die();
 }
 
 
@@ -95,7 +96,8 @@ move_uploaded_file($_FILES["foto"]["tmp_name"], $obj_archivo);
 $foto = mysqli_real_escape_string($conexion, $obj_archivo);
 
 if(!valida_rut($rut)){
-    die("Rut erroneo, vuelva a ingresarlo.");
+    echo "Rut erroneo, intentelo de nuevo.";
+    die();
 }
 
 guardar($conexion, $nombre, $apellido, $rut, $telefono, $correo, $contraseña, $foto);

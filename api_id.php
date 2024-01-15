@@ -4,6 +4,7 @@ session_start();
 $correo = $_SESSION["email"];
 $contraseña = $_SESSION["pass"];
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
