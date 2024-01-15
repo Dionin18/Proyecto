@@ -17,7 +17,7 @@ function guardar($conexion, $titulo, $subtitulo, $enlace){
     if($resultado){
         echo "<br>La noticia se ingreso correctamente.<br>";
         echo "<a href='subir_noticia.php'> <button type='button' class='btn btn-outline-secondary btn-lg'>Subir otra noticia</button> </a>";
-        echo "<a href='index.php'> <button type='button' class='btn btn-outline-secondary btn-lg'>Volver al inicio</button> </a>";
+        echo "<a href='clonIndex.php'> <button type='button' class='btn btn-outline-secondary btn-lg'>Volver al inicio</button> </a>";
         return True;
     }else{
         echo "<br>Error al guardar la noticia.<br>";
